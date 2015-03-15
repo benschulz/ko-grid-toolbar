@@ -1,0 +1,56 @@
+@height: 35px;
+@vertical-padding: 6px;
+
+.ko-grid.with-toolbar .ko-grid-table-container {
+  margin-bottom: -@height;
+  border-bottom-width: @height;
+}
+
+.ko-grid-toolbar {
+  position: relative;
+  height: @height;
+  background-color: #F6F6F6;
+}
+
+.toolbar() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: @vertical-padding 12px;
+  line-height: @height - 2 * @vertical-padding;
+}
+
+.ko-grid-left-toolbar {
+  .toolbar();
+  text-align: left;
+}
+
+.ko-grid-right-toolbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ko-grid-toolbar-button {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E5E5E5;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+  cursor: pointer;
+}
+
+.ko-grid-toolbar-button:hover {
+  background-color: rgba(68, 149, 218, 0.15);
+}
+
+.ko-grid-toolbar-button:active, .pressed.ko-grid-toolbar-button {
+  border-style: inset;
+}
