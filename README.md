@@ -1,1 +1,0 @@
-A ko-grid extension that adds an extensible toolbar.
