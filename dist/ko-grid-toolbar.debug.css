@@ -13,7 +13,7 @@
   left: 0;
   bottom: 0;
   padding: 6px 12px;
-  line-height: 35px - 2 * 6px;
+  line-height: 23px;
   text-align: left;
 }
 .ko-grid-right-toolbar {
