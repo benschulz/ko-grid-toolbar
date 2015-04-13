@@ -15,7 +15,6 @@
 .toolbar() {
   position: absolute;
   top: 0;
-  left: 0;
   bottom: 0;
   padding: @vertical-padding 12px;
   line-height: (@height - 2 * @vertical-padding);
@@ -23,14 +22,14 @@
 
 .ko-grid-left-toolbar {
   .toolbar();
+  left: 0;
   text-align: left;
 }
 
 .ko-grid-right-toolbar {
-  position: absolute;
-  top: 0;
+  .toolbar();
   right: 0;
-  bottom: 0;
+  text-align: right;
 }
 
 .ko-grid-toolbar-button {
@@ -43,6 +42,7 @@
   border: 1px solid #E5E5E5;
   background-repeat: no-repeat;
   background-position: center;
+  line-height: 20px;
   color: transparent;
   cursor: pointer;
 }

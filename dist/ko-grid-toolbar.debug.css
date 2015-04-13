@@ -10,17 +10,20 @@
 .ko-grid-left-toolbar {
   position: absolute;
   top: 0;
-  left: 0;
   bottom: 0;
   padding: 6px 12px;
   line-height: 23px;
+  left: 0;
   text-align: left;
 }
 .ko-grid-right-toolbar {
   position: absolute;
   top: 0;
-  right: 0;
   bottom: 0;
+  padding: 6px 12px;
+  line-height: 23px;
+  right: 0;
+  text-align: right;
 }
 .ko-grid-toolbar-button {
   display: inline-block;
@@ -32,6 +35,7 @@
   border: 1px solid #E5E5E5;
   background-repeat: no-repeat;
   background-position: center;
+  line-height: 20px;
   color: transparent;
   cursor: pointer;
 }
